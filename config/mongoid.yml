@@ -78,13 +78,3 @@ test:
         # low amounts for fast failures.
         max_retries: 1
         retry_interval: 0
-<% if ENV['MONGOHQ_URL'] %>
-production:
-  sessions:
-    default:
-      uri: <%= ENV['MONGOHQ_URL'] %>
-      database: rails3_mongoid_devise_development
-      options:
-        skip_version_check: true
-        safe: true
-<% end %>
