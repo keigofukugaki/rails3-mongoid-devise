@@ -83,6 +83,7 @@ production:
   sessions:
     default:
       uri: <%= ENV['MONGOHQ_URL'] %>
+      database: rails3_mongoid_devise_development
       options:
         skip_version_check: true
         safe: true
